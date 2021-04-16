@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ Combine-Latest & </h2>
+    <div class="api-body">withLatestFrom
+
+      <p class="short-description"></p>
+      <p class="info">Combines multiple Observables to create an Observable whose values are calculated from the latest
+        values of each of its input Observables.</p>
+      <ul>
+        <p class="info"><strong>📌 <code>withLatestFrom : </code></strong>Combines the source Observable with other
+          Observables to create an Observable whose values are calculated from the latest values of each, only when the
+          source emits.</p>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 pr-4">
+      <strong>Names</strong>
+      <hr>
+      <select class="form-control" #name>
+        <option *ngFor="let item of nameSource" value="{{item}}">{{item}}</option>
+      </select>
+      <br>
+      <br>
+
+      <strong>Colors</strong>
+      <hr>
+      <select class="form-control" #color>
+        <option *ngFor="let item of colorSource" value="{{item}}">{{item}}</option>
+      </select>
+      <br>
+      <br>
+
+    </div>
+
+    <div class="col-md-9 ml-auto">
+      <strong>CombineLatest</strong>
+      <hr>
+      <div class="wrapper" id="elContainer1">
+      </div>
+      <br><br>
+      <strong>withLatestFrom</strong>
+      <hr>
+      <div class="wrapper" id="elContainer2">
+      </div>
+    </div>

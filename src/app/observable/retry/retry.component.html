@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ Retry, RetryWhen, Scan, Delay</h2>
+    <div class="api-body">
+
+      <p class="short-description"></p>
+      <p class="info">Returns an Observable that mirrors the source Observable with the exception of an error. If the
+        source Observable calls error, this method will resubscribe to the source Observable for a maximum of count
+        resubscriptions (given as a number parameter) rather than propagating the error call.</p>
+      <ul>
+        <p class="info"><strong>📌 <code>RetryWhen : </code></strong>Returns an Observable that mirrors the source
+          Observable with the exception of an error. If the source Observable calls error, this method will emit the
+          Throwable that caused the error to the Observable returned from notifier. If that Observable calls complete or
+          error then this method will call complete or error on the child subscription. Otherwise this method will
+          resubscribe to the source Observable</p>
+      </ul>
+      <ul>
+        <p class="info"><strong>📌 <code>Scan : </code></strong>Applies an accumulator function over the source
+          Observable, and returns each intermediate result, with an optional seed value.</p>
+      </ul>
+      <ul>
+        <p class="info"><strong>📌 <code>Delay : </code></strong>Delays the emission of items from the source Observable
+          by a given timeout or until a given Date.</p>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Error : </strong>{{error}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeErrorAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <button class="btn btn-primary" type="button" (click)="fetchDetails()">
+    <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    {{fetching ? ' Fetching...' : 'Fetch Details'}}
+  </button>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="mt-2">status:
+        <strong [ngClass]="{
+                  'text-success': status=='Data Fetched.',
+                  'text-danger': status=='Problem in fetching data.'}">{{status}}</strong>
+        <span *ngIf="fetching" class="spinner-grow spinner-grow-sm text-secondary" role="status">
+          <span class="sr-only">Loading...</span>
+        </span>
+      </p>
+
+      <table class="table table-striped" *ngIf="person">
+        <tr>
+          <th>Id</th>
+          <td>{{person.id}}</td>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <td>{{person.name}}</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>{{person.email}}</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>{{person.gender}}</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>{{person.age}}</td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td>{{person.phone}}</td>
+        </tr>
+        <tr>
+          <th>Picture</th>
+          <td><img [src]="person.picture" alt=""></td>
+        </tr>
+        <tr>
+          <th>Location</th>
+          <td>{{person.location}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

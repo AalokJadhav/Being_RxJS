@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <h2>✔ Of</h2>
+    <div class="api-body">
+        <p class="short-description"></p>
+        <p class="info">Converts the arguments to an observable sequence.</p>
+    </div>
+    <br>
+    <strong>Ex -01 (Of)</strong>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data :</strong> (Of) 'Ross', 'Rachel', 'Joey'
+            </p>
+            <hr>
+            <ul id="elContainer"></ul>
+        </div>
+
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded"><strong>Data :</strong> Of (&#123; a: 'Ross', b: 'Rachel', c:
+                'Joey'&#125;)</p>
+            <hr>
+            <ul>
+                <li><strong>a : </strong>{{obsMSg.a}}</li>
+                <li><strong>b : </strong>{{obsMSg.b}}</li>
+                <li><strong>c : </strong>{{obsMSg.c}}</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2>✔ From</h2>
+    <div class="api-body">
+        <p class="short-description"></p>
+        <p class="info">Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an
+            Observable-like object.</p>
+    </div>
+    <strong>Ex -02 (From)</strong>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Array</strong>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data :</strong> from (['Ross', 'Rachel', 'Joey'])
+            </p>
+            <hr>
+            <ul id="elContainer3"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <strong>Promise</strong>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data :</strong> Promise to Observable
+            </p>
+            <hr>
+            <ul id="elContainer4"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <strong>String</strong>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data :</strong> String to Observable
+            </p>
+            <hr>
+            <ul id="elContainer5"></ul>
+        </div>
+    </div>
+</div>

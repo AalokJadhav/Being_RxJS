@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ CatchError & ThrowError</h2>
+    <div class="api-body">
+
+      <p class="short-description"></p>
+      <p class="info">Catches errors on the observable to be handled by returning a new observable or throwing an error.
+      </p>
+      <ul>
+        <p class="info"><strong>📌 <code>ThrowError : </code></strong>Creates an Observable that emits no items to the
+          Observer and immediately emits an error notification.</p>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Error : </strong>{{error}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeErrorAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <strong>Products : <span class="text-primary">Laptop</span></strong>
+      <hr>
+      <button class="btn btn-primary" (click)="onGetProducts()">Get Products</button>
+    </div>
+  </div>
+</div>

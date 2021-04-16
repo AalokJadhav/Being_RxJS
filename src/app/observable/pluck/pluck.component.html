@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <h2>✔ Pluck</h2>
+  <div class="api-body">
+    <p class="short-description"></p>
+    <p class="info">Applies a given project function to each value emitted by the source Observable, and emits the
+      resulting values as an Observable.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex - 01</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded"><strong>Pluck</strong> by property</p>
+      <br>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data1">
+            <td>{{item}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <strong>Ex - 02</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded"><strong>Pluck</strong> by nested property</p>
+      <br>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Job > Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data2">
+            <td>{{item}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

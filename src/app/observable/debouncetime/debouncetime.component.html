@@ -1,0 +1,43 @@
+<ngx-loading-bar></ngx-loading-bar>
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ DebounceTime, DistinctUntilChanged</h2>
+    <div class="api-body">
+
+      <p class="short-description"></p>
+      <p class="info">Emits a value from the source Observable only after a particular time span determined by another
+        Observable has passed without another source emission.</p>
+      <ul>
+        <p class="info"><strong>📌 <code>DistinctUntilChanged : </code></strong>Returns an Observable that emits all
+          items emitted by the source Observable that are distinct by comparison from the previous item.</p>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-6">
+      <strong>Ex - 01 <span class="text-primary">DebounceTime</span> </strong>
+      <hr>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label col-form-label-md">Search...</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-md" placeholder="Search..." #myInput1>
+        </div>
+      </div>
+      <span *ngIf="reqData1 !== null">Requested Data: <strong class="text-success">{{reqData1}}</strong></span>
+    </div>
+
+    <div class="col-md-6">
+      <strong>Ex - 02 <span class="text-warning">DistinctUntilChanged</span> </strong>
+      <hr>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label col-form-label-md">Search...</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-md" placeholder="Search..." #myInput2>
+        </div>
+      </div>
+      <span *ngIf="reqData2 !== null">Requested Data: <strong class="text-success">{{reqData2}}</strong></span>
+    </div>
+
+  </div>
+</div>

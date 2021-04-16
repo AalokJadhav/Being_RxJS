@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ Zip-forkjoin</h2>
+    <div class="api-body">
+
+      <p class="short-description"></p>
+      <p class="info">Accepts an Array of ObservableInput or a dictionary Object of ObservableInput and returns an
+        Observable that emits either an array of values in the exact same order as the passed array, or a dictionary of
+        values in the same shape as the passed dictionary.</p>
+      <ul>
+        <p class="info"><strong>📌 <code>Zip : </code></strong>The Zip operator applies a combination to the emitted
+          items in sequence, by two or more Observables, resulting in a stream of emitted items in the returned
+          Observable.</p>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 pr-4">
+      <strong>Names</strong>
+      <hr>
+      <select class="form-control" #name>
+        <option *ngFor="let item of nameSource" value="{{item}}">{{item}}</option>
+      </select>
+      <br>
+      <br>
+
+      <strong>Colors</strong>
+      <hr>
+      <select class="form-control" #color>
+        <option *ngFor="let item of colorSource" value="{{item}}">{{item}}</option>
+      </select>
+      <br>
+      <br>
+
+    </div>
+
+    <div class="col-md-9 ml-auto">
+      <strong>ZIP</strong>
+      <hr>
+      <div class="wrapper" id="elContainer1">
+      </div>
+      <br><br>
+      <strong>ForkJoin</strong>
+      <hr>
+      <div class="wrapper" id="elContainer2">
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<!-- Use of tap / do operator
+
+            1. Console.log(Data)
+            2. Console.log(Response)
+            3. Change Property Value
+            4. Emit Values in Observable
+            5. Perform any other operations -->
+
+
+<div class="container-fluid" [ngStyle]="{'color': myColor}">
+  <h2>✔ tap / do</h2>
+  <div class="api-body">
+    <p class="short-description"></p>
+    <p class="info">Perform a side effect for every emission on the source Observable, but return an Observable that is
+      identical to the source.</p>
+    <ul>
+      <p class="info">📌 <strong>If you are using pipeable operator, <code>do</code> is known as a
+          <code>tap</code></strong></p>
+    </ul>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <strong>Ex - 01</strong>
+      <hr>
+      <ul id="elContainer1"></ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex - 02</strong>
+      <hr>
+      <ul id="elContainer2"></ul>
+    </div>
+
+  </div>
+</div>

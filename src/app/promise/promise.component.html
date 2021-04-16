@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="my-3">
+                <h2>Promise</h2>
+                <div class="api-body">
+                    <p class="short-description"></p>
+                    <p class="info">A <code><strong>Promise</strong></code> is a special JavaScript object that links
+                        the “producing code”
+                        and the “consuming code” together.
+                        A <code><strong>Promise</strong></code> is a proxy for a value not necessarily known when the
+                        <code><strong>Promise</strong></code> is
+                        created. It allows you to associate handlers with an asynchronous action's eventual success
+                        value or
+                        failure reason. This lets asynchronous methods return values like synchronous methods: instead
+                        of
+                        immediately returning the final value, the asynchronous method returns a
+                        <code><strong>Promise</strong></code> to supply the value at
+                        some point in the future.</p>
+                    <p>A <code>Promise</code> is in one of these states:</p>
+                    <ul>
+                        <li><em><code>pending</code></em> : initial state, neither fulfilled nor rejected.</li>
+                        <li><em><code>fulfilled</code></em> : meaning that the operation was completed successfully.
+                        </li>
+                        <li><em><code>rejected</code></em> : meaning that the operation failed.</li>
+                    </ul>
+                </div>
+                <h4 style="text-align: center;">Table List</h4>
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Color</th>
+                            <th scope="col">Hard-Disk</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let laptop of promiseVal; index as i">
+                            <td scope="row">{{i +1}}</td>
+                            <td scope="row">{{laptop.brand}}</td>
+                            <td scope="row">{{laptop.color}}</td>
+                            <td scope="row">{{laptop.hardDisk}}</td>
+                            <td scope="row">{{laptop.price}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="style2">
+                <h2>✔ Async / await</h2>
+                <br>
+                <p class="lead">
+                    An <code><strong>async</strong></code> function is a function declared with the
+                    <code><strong>async</strong></code> keyword, and the <code><strong>await</strong></code> keyword is
+                    permitted within them. The async and <code><strong>await</strong></code> keywords enable
+                    asynchronous,
+                    promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure
+                    promise chains.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <strong>Ex - 1 : With Promises</strong>
+                        <hr>
+                        <button class="btn btn-primary" (click)="fetch1()">Buy Laptop</button>
+                        <hr>
+                        <div id="result1">{{result1 | json}}</div>
+                    </div>
+                    <div class="col-md-4">
+                        <strong>Ex - 2 : With Async / await</strong>
+                        <hr>
+                        <button class="btn btn-primary" (click)="fetch2()">Buy Laptop</button>
+                        <hr>
+                        <div id="result2">{{result2 | json}}</div>
+                    </div>
+                    <div class="col-md-4">
+                        <strong>Ex - 3 : With Fetch API</strong>
+                        <hr>
+                        <button class="btn btn-primary" (click)="fetch3()">Buy Laptop</button>
+                        <hr>
+                        <div id="result3">{{result3 | json}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

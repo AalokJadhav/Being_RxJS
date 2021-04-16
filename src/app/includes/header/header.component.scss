@@ -1,0 +1,27 @@
+.topnav-centered {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: rgb(21, 214, 37);
+  }
+  49% {
+    color: rgb(21, 214, 37);
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: rgb(21, 214, 37);
+  }
+}

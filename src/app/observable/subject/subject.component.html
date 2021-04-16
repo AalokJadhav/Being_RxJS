@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ Subject, BehaviorSubject</h2>
+    <div class="api-body">
+      <p class="short-description"></p>
+      <p class="info">A Subject is a special type of Observable that allows values to be multicasted to many Observers.
+        Subjects are like EventEmitters.</p>
+      <ul>
+        <p class="info">📌 A subject is an observable that can multicast i.e. talk to many observers. Consider a button
+          with an event listener, the function attached to the event using add listener is called every time the user
+          clicks on the button similar functionality goes for subject too.</p>
+      </ul>
+      <ul>
+        <p class="info"><strong>📌 <code>BehaviorSubject : </code></strong>A variant of Subject that requires an initial
+          value and emits its current value whenever it is subscribed to.</p>
+      </ul>
+
+    </div>
+    <hr>
+  </div>
+
+  <div class="col-md-12">
+    <strong>Ex - 01 (Subject)</strong> ---
+    Show <strong class="text-primary">Exclusive</strong> badge in this page only.
+    <strong><code>(See navbar)</code></strong>
+  </div>
+
+  <hr>
+  <div class="col-md-12">
+    <strong>Ex - 02 (BehaviorSubject)</strong>
+    <h3 class="my-3">Username is
+      <span class="blinking"> {{userName}}</span>
+    </h3>
+    <br>
+    <div class="row my-3">
+      <div class="col-md-4">
+        <app-component1></app-component1>
+      </div>
+      <div class="col-md-4">
+        <app-component2></app-component2>
+      </div>
+      <div class="col-md-4">
+        <app-component3></app-component3>
+      </div>
+    </div>
+    <!-- 
+        <div class="col-md-6 my-3">
+          <strong>Ex - 02 | TakeLast(5)</strong>
+          <hr>
+          <ul class="techList" id="elContainer2"></ul>
+        </div>
+        <div class="col-md-6 my-3">
+          <strong>Ex - 04 | TakeWhile()</strong>
+          <hr>
+          <ul id="elContainer4"></ul>
+        </div> -->
+
+
+  </div>
+</div>

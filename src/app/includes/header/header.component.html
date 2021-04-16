@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <div class="container-fluid" style="font-weight: 400">
+    <a href="https://rxjs-dev.firebaseapp.com/guide/overview" target="_blank">
+      <img src="/assets/images/logo.png" style="position: relative;margin-top: -21px;margin-right: 20px;top: 12px;
+        height: 40px;">
+    </a>
+    <a class="navbar-brand" style="color: crimson; margin-right: auto">Observable <code>&</code>
+      Promises</a>&nbsp;&nbsp;
+    <div *ngIf="exclusive">
+      <strong class="badge badge-primary">Exclusive</strong>&nbsp;&nbsp;<strong style="color: white;">--></strong>
+      <span class="blinking"> Implement with Subject Operator</span>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav m;-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/promise" routerLinkActive="active">Promise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/observable" routerLinkActive="active">Observable</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <span class="navbar-text" style="font-family: cursive;width: 22%;font-weight: bolder">
+    Made with <a style="color: red">❤</a> by Alok Jadhav
+  </span>
+</nav>

@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <div class="my-3">
+    <h2>✔ shareReplay</h2>
+    <div class="api-body">
+
+      <p class="short-description"></p>
+      <p class="info"><code><strong>shareReplay()</strong></code> is mostly used when we need the ability to share,
+        cache, and replay the X emitted values.
+        Use <code><strong>shareReplay()</strong></code> to avoid multiple http request.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Products: <span class="text-primary">Laptop</span></strong>
+      <hr>
+      <div class="row">
+        <div class="card" *ngFor="let item of laptops | async">
+          <img src="{{item.imgUrl}}" class="card-img-top">
+          <div class="card-body">
+            <small>Id: {{item.id}}</small>
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.type}}</h6>
+            <p class="card-text">{{item.description}}</p>
+            <div class="d-flex align-items-center">
+              <strong>Price: {{item.price}}</strong>
+              <a href="#" class="btn btn-dark btn-sm ml-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+
+      <strong>Products: <span class="text-primary">Mobile</span></strong>
+      <hr>
+      <div class="row">
+        <div class="card" *ngFor="let item of mobiles | async">
+          <img src="{{item.imgUrl}}" class="card-img-top">
+          <div class="card-body">
+            <small>Id: {{item.id}}</small>
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.type}}</h6>
+            <p class="card-text">{{item.description}}</p>
+            <div class="d-flex align-items-center">
+              <strong>Price: {{item.price}}</strong>
+              <a href="#" class="btn btn-dark btn-sm ml-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr>
+  <div class="row all-products">
+    <div class="col-md-12">
+      <strong>All Products</strong>
+      <hr>
+      <div class="row">
+        <div class="card" *ngFor="let item of allProducts | async">
+          <img src="{{item.imgUrl}}" class="card-img-top">
+          <div class="card-body">
+            <small>Id: {{item.id}}</small>
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.type}}</h6>
+            <p class="card-text">{{item.description}}</p>
+            <div class="d-flex align-items-center">
+              <strong>Price: {{item.price}}</strong>
+              <a href="#" class="btn btn-dark btn-sm ml-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

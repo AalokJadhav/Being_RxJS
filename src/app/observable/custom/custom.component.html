@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h2>✔ Custom Observable</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex - 01 (Manual)</strong>
+            <hr>
+            <ul class="list" [ngClass]="textStatus == 'Completed..!'? 'completed': textStatus == 'error'? 'error':''"
+                id="elContainer1"></ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Ex - 02 (Custom Interval Observable)</strong>
+            <hr>
+            <ul class="list" [ngClass]="textStatus2 == 'Completed..!'? 'completed': textStatus2 == 'error'? 'error':''"
+                id="elContainer2"></ul>
+        </div>
+    </div>
+    <br>
+    <strong>Ex - 03 (Random Names)</strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Random Name :</strong> 'Ross', 'Rachel', 'Joey', 'Phoebe', 'Monica', 'Chandler'
+            </p>
+            <hr>
+            <p>Current Name : <strong class="text">{{names}}</strong></p>
+            <span class="badge"
+                [ngClass]="namestatus == 'Completed..!'? 'badge-success': namestatus == 'error'? 'badge-danger': 'badge-primary'">
+                {{namestatus == 'Completed..!'? 'success': namestatus == 'error'? 'Error': 'running'}}</span>
+
+        </div>
+    </div>
+</div>

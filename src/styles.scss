@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+// custom observable component styles starts
+ul.techList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.techList li {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 7px 13px;
+  margin-top: 10px;
+}
+
+ul.techList.error li {
+  color: red;
+  background: rgba(255, 0, 0, 0.08);
+  border-color: red;
+}
+
+ul.techList.completed li {
+  color: #3dd843;
+  background: rgba(61, 216, 67, 0.08);
+  border-color: #3dd843;
+}
+// custom observable component styles ends
+
+.notification {
+  // background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.notification .item {
+  overflow: hidden;
+  background-color: white;
+  padding: 5px !important;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+.notification .item:not(:first-child) {
+  border-top: 1px solid #f5f5f5;
+}
+
+.notification .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 0 10px;
+}
+
+.notification .header .time {
+  opacity: 0.3;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.notification .body {
+  font-size: 13px;
+  line-height: normal;
+}
+
+.notification .body .item-img {
+  float: right !important;
+  margin: 0 0 0 10px;
+  border: 1px solid #989898;
+}
+
+.wrapper {
+  // width: 150px;
+  // height: 100px !important;
+  display: flex;
+}
+
+.item {
+  margin-left: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.violet {
+  background-color: violet;
+}
+.purple {
+  background-color: purple;
+}
+.grey {
+  background-color: grey;
+}
