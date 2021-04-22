@@ -1,13 +1,14 @@
 {
-  "name": "rx-js",
+  "name": "rx",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,10 @@
     "@ngx-loading-bar/core": "^5.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@angular/cli": "~11.2.3",
+    "@angular/compiler-cli": "~11.2.4",
+    "typescript": "~4.1.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.3",
@@ -42,5 +46,21 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.5"
-  }
+  },
+  "engines": {
+    "node": "12.13.1",
+    "npm": "7.6.0"
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AalokJadhav/Being_RxJS.git"
+  },
+  "author": "Alok Jadhav <'alokjadhav007@gmail.com'>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AalokJadhav/Being_RxJS/issues"
+  },
+  "homepage": "https://github.com/AalokJadhav/Being_RxJS#readme"
 }
